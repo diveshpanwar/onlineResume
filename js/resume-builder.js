@@ -113,7 +113,57 @@ var bio  = {
 // object for education
 
 var education = {
-  
+  "schools": [
+    {
+    "name": "Shishu Shiksha Niketan",
+    "majors":"Science, SST, IP, Mathematics",
+    "type": "High School",
+    "location": "Totu, Shimla, Himachal Pradesh, India",
+    "year": "1999-2011"
+  },
+  {
+    "name": "Kendriya Vidyalya",
+    "majors":"Physics, Chemistry, Computer Science, Mathematics",
+    "type": "Senior Secondary",
+    "location": "Jutogh, Shimla, Himachal Pradesh, India",
+    "year": "2011-2013"
+  },
+  {
+    "name": "University Institute of Information Technology",
+    "majors":"Programming, Algorithm, Databases, AI",
+    "type": "Graduation",
+    "location": "Totu, Shimla, Himachal Pradesh, India",
+    "year": "2013-2017"
+  }
+],
+"onlineCourse": {
+  "name": "Udacity",
+  "majors":"HTML, CSS, JAVASCRIPT",
+  "type": "Nano Degree",
+  "year": "19 June, 2017 - Present"
+},
+
+setEducation: function(){
+$(".main").append(educationContainer);
+$("#education").append(educationTitle);
+$("#education").append(hrGradient);
+
+  for(school in education.schools){
+    $("#education").append(schoolOnlineCourseContainer);
+    $("#education .col-md-5:last").append(educationName.replace("%name%",education.schools[school].name));
+    $("#education .col-md-5:last").append(educationType.replace("%type%",education.schools[school].type));
+    $("#education .col-md-5:last").append(educationMajors.replace("%majors%",education.schools[school].majors));
+    $("#education .col-md-5:last").append(educationLocation.replace("%location%",education.schools[school].location));
+    $("#education .col-md-5:last").append(educationYear.replace("%year%",education.schools[school].year));
+  }
+
+  $("#education").append(schoolOnlineCourseContainer);
+  $("#education .col-md-5:last").append(educationName.replace("%name%",education.onlineCourse.name));
+  $("#education .col-md-5:last").append(educationType.replace("%type%",education.onlineCourse.type));
+  $("#education .col-md-5:last").append(educationMajors.replace("%majors%",education.onlineCourse.majors));
+  $("#education .col-md-5:last").append(educationYear.replace("%year%",education.onlineCourse.year));
+
+}
 };
 
 
@@ -126,13 +176,13 @@ $(function(){
   navItems.addNavItems();
 
   //adding image, role and title
-  // bio.setMainContent();
+  bio.setMainContent();
 
   // adding bio data
-  // bio.setBioData();
+  bio.setBioData();
 
-
-
+  // adding the education details
+  education.setEducation();
   // To mark the navigation item active on Click
   $(".navbar-nav li").click(function() {
     $(".navbar-nav li").each(function(){

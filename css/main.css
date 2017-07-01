@@ -87,8 +87,14 @@ h1, h3, h2 {
   .block-margin {
     margin: 4% 4%;
   }
+
 }
 
+@media only screen and (max-width: 500px) {
+  #education .col-md-5 {
+    text-align: justify;
+  }
+}
 @media only screen and (max-width: 450px) {
   #personalInfo span {
     font-size: 15px;
