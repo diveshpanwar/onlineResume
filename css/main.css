@@ -78,6 +78,9 @@ h1, h3, h2 {
   #personalInfo h1, h3{
     text-align: right;
   }
+  #personalInfo .col-md-6 {
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 991px) {
