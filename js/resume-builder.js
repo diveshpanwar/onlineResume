@@ -1,3 +1,4 @@
+// Object for navigation
 var navItems = {
   "navTitle": {
     "name": "Online Resume",
@@ -34,7 +35,7 @@ addNavItems: function() {
 }
 };
 
-
+// object for bio
 var bio  = {
   "title":"Divesh Panwar",
   "role": "Front End Developer",
@@ -107,7 +108,12 @@ var bio  = {
       $("#personalInfo .row:last").append(skillItem.replace("%skill%",bio.skills[skill].skill).replace("%%",bio.skills[skill].percent));
     }
   }
+};
 
+// object for education
+
+var education = {
+  
 };
 
 
@@ -115,13 +121,18 @@ var bio  = {
 $(function(){
   // add navigation brand
   navItems.addNavBrand();
+
   // add the navigation list
   navItems.addNavItems();
+
   //adding image, role and title
-  bio.setMainContent();
+  // bio.setMainContent();
 
   // adding bio data
-  bio.setBioData();
+  // bio.setBioData();
+
+
+
   // To mark the navigation item active on Click
   $(".navbar-nav li").click(function() {
     $(".navbar-nav li").each(function(){

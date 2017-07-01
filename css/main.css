@@ -22,6 +22,7 @@
 }
 .margin-bottom {
   margin-bottom: 20px;
+  min-height: 20px;
 }
 .header-image {
   margin: 15px auto 5px auto;
@@ -38,25 +39,6 @@ h1, h3, h2 {
 
 .text-big {
   font-size: 50px;
-}
-
-@media only screen and (min-width: 991px) {
-  #personalInfo h1, h3{
-    text-align: right;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  #personalInfo .col-md-6 {
-    text-align: center;
-  }
-
-}
-
-@media only screen and (max-width: 450px) {
-  #personalInfo span {
-    font-size: 15px;
-  }
 }
 
 .icon-big {
@@ -84,4 +66,31 @@ h1, h3, h2 {
 
 .percent {
   display: none;
+}
+.block-margin {
+  margin: 2% 4%;
+  padding: 15px;
+}
+
+
+
+@media only screen and (min-width: 991px) {
+  #personalInfo h1, h3{
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #personalInfo .col-md-6 {
+    text-align: center;
+  }
+  .block-margin {
+    margin: 4% 4%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #personalInfo span {
+    font-size: 15px;
+  }
 }
