@@ -41,7 +41,7 @@ var bio  = {
   "role": "Front End Developer",
   "image": "images/logo.jpg",
   "mobile": "9882887885",
-  "tagLine": "I am a simple, Hardworking, and Innovative. I love to explore and learn new things",
+  "tagLine": "I am Simple, Hardworking, and Innovative. I love to explore and learn new things",
   "email": "divesh.panwar@gmail.com",
   "location": "Shimla, H.P, India",
   "github": "https://diveshpanwar.github.com/",
@@ -131,15 +131,15 @@ var education = {
   {
     "name": "University Institute of Information Technology",
     "majors":"Programming, Algorithm, Databases, AI",
-    "type": "Graduation",
-    "location": "Totu, Shimla, Himachal Pradesh, India",
+    "type": "Graduation (B.Tech CSE)",
+    "location": "Summer Hill, Shimla, Himachal Pradesh, India",
     "year": "2013-2017"
   }
 ],
 "onlineCourse": {
   "name": "Udacity",
   "majors":"HTML, CSS, JAVASCRIPT",
-  "type": "Nano Degree",
+  "type": "Nano Degree (Front End Web Development)",
   "year": "19 June, 2017 - Present"
 },
 
