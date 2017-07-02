@@ -72,7 +72,10 @@ h1, h3, h2 {
   padding: 15px;
 }
 
-
+.btn-margin {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 @media only screen and (min-width: 991px) {
   #personalInfo h1, h3{

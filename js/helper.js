@@ -5,7 +5,7 @@ var hrGradient = '<hr class="gradient">';
 
 var headerContent = '<header class="container-fluid text-center" id="personalInfo"><div class="row text-center header-margin"></div></header>';
 var headerImageTitle = '<div class="col-md-6"></div>';
-var headerTitle = '<h1 class="text-big">%title%</h1>';
+var headerTitle = '<h1 class="text-big" id="myName">%title%</h1>';
 var headerRole = '<h3 class="">%role%</h3>';
 var headerImage = '<img src="%image%" class="header-image header-above-margin" alt="my display picture">';
 var bioContent = '<div class="row shadow"></div>';

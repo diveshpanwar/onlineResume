@@ -250,4 +250,17 @@ $(function(){
     $("#nav").toggleClass('navbar-inverse');
   });
 
+// internationalize
+//theme switcher
+  $("#internationalize").click(function(event) {
+    var oldName = $("#myName").text();
+    var finalName = oldName;
+     var names = oldName.split(" ");
+     names[1] = names[1].toUpperCase();
+     names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();
+     finalName = names.join(" ");
+     $("#myName").html(finalName);
+  });
+
+
 });
