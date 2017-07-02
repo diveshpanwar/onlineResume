@@ -166,6 +166,54 @@ $("#education").append(hrGradient);
 }
 };
 
+// object  for work experience
+
+var works = {
+  "workDetail" : [
+    {
+      "role": "Web Master",
+      "companyName": "University Institute of Information Technology",
+      "location": "Summer Hill, Himachal Pradesh, India",
+      "year": "March, 2015- March, 2017",
+      "description": "My job description included managing the university website, and portals."
+    },
+    {
+      "role": "Technical Head",
+      "companyName": "University Institute of Information Technology",
+      "location": "Summer Hill, Himachal Pradesh, India",
+      "year": "March, 2016- March, 2017",
+      "description": "My job description included managing and organizing technical events, providing technical support to university departments, and organizing and motivating my team."
+    },
+    {
+      "role": "Web Developer",
+      "companyName": "Google",
+      "location": "Mountain View, California, United States",
+      "year": "April, 2017- Present",
+      "description": "My job description includes creating websites on client demands."
+    },
+    {
+      "role": " Full Stack Web Developer",
+      "companyName": "Apple",
+      "location": "Cupertino, California, United States",
+      "year": "April, 2017- Present",
+      "description": "My job description includes managing and creating on demand websites."
+    }
+  ],
+  setWorkExperience: function(){
+    $("main").append(workExperienceMainContainer);
+    $("#workExperience").append(workExperienceTitle);
+    $("#workExperience").append(hrGradient);
+    for(work in works.workDetail){
+      $("#workExperience").append(schoolOnlineCourseContainer);
+      $("#workExperience .col-md-5:last").append(workRole.replace("%role%",works.workDetail[work].role));
+      $("#workExperience .col-md-5:last").append(workCompany.replace("%company%",works.workDetail[work].companyName));
+      $("#workExperience .col-md-5:last").append(workLocation.replace("%location%",works.workDetail[work].location));
+      $("#workExperience .col-md-5:last").append(workYear.replace("%year%",works.workDetail[work].year));
+      $("#workExperience .col-md-5:last").append(workDescription.replace("%description%",works.workDetail[work].description));
+    }
+  }
+};
+
 
 //everything inside this document ready function
 $(function(){
@@ -183,6 +231,11 @@ $(function(){
 
   // adding the education details
   education.setEducation();
+
+  // adding the work details
+  works.setWorkExperience();
+
+
   // To mark the navigation item active on Click
   $(".navbar-nav li").click(function() {
     $(".navbar-nav li").each(function(){

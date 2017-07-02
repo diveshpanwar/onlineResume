@@ -26,3 +26,12 @@ var educationMajors = '<h4><span class="text-thick">Majors:</span> %majors%</h4>
 var educationType = '<h4><span class="text-thick">Type:</span> %type%</h4>';
 var educationLocation ='<h4><span class="text-thick">Location:</span> %location%</h4>';
 var educationYear = '<h4><span class="text-thick">Year:</span> %year%</h4>';
+
+var workExperienceMainContainer = '<div class="row header-margin" id="workExperience"></div>';
+var workExperienceTitle = '<h2 class="text-center">Work Experience</h2>';
+var workExperienceContainer = '<div class="col-md-5 shadow block-margin"></div>';
+var workRole = '<h4><span class="text-thick">Name:</span> %role%</h4>';
+var workCompany = '<h4><span class="text-thick">Majors:</span> %company%</h4>';
+var workLocation = '<h4><span class="text-thick">Type:</span> %location%</h4>';
+var workYear ='<h4><span class="text-thick">Location:</span> %year%</h4>';
+var workDescription = '<h4><span class="text-thick">Year:</span> %description%</h4>';
