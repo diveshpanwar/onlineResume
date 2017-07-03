@@ -112,9 +112,22 @@ h1, h3, h2 {
   .shadow {
     box-shadow: 4px 4px 4px 4px #999;
   }
-}
-@media only screen and (max-width: 450px) {
-  #personalInfo span {
+
+  #projects h4, p {
     font-size: 15px;
   }
+
+  #personalInfo h4 {
+    font-size: 15px;
+  }
+
+  #workExperience h4 {
+    font-size: 15px;
+  }
+
+  #education h4 {
+    font-size: 15px;
+  }
+}
+
 }
