@@ -214,6 +214,66 @@ var works = {
   }
 };
 
+// object for projects
+
+var projectsInfo = {
+  "projects": [
+    {
+      "name": "Laxmi Tutorials",
+      "url": "https://laxmitutorials.com",
+      "imgalt": "Laxmi Tutorials",
+      "img": "images/projects/laxmi.png",
+      "date": "July 2016",
+      "description": "This project is based on core PHP, HTML, CSS. This project belongs to an institute called Laxmi Tutorials and Training Institute."
+    },
+    {
+      "name": "UIIT Website",
+      "date": "January 2017",
+      "imgalt": "UIIT Website",
+      "img": "images/projects/uiit.png",
+      "url": "http://uiit.ac.in",
+      "description": "This project is based on PHP, HTML, CSS. This project belongs to an educational institute, University Institute of Information Technology."
+    },
+    {
+      "name": "UIIT Portal",
+      "date": "March 2017",
+      "imgalt": "UIIT Portal",
+      "img": "images/projects/portal.png",
+      "url": "http://portal.uiit.ac.in",
+      "description": "This project is based on Laravel Framework, HTML, CSS, and Bootstrap. This project belongs to an institute, laxmitutorials.com."
+    },
+    {
+      "name": "RICSIT Website",
+      "date": "Feburary 2017",
+      "imgalt": "RICSIT Website",
+      "img": "images/projects/ricsit.png",
+      "url": "http://ricsit.uiit.ac.in",
+      "description": "This project is based on core PHP, HTML, CSS. This project is created for a conference, Recent Innovations in Computer Science and Information Technology."
+    },
+    {
+      "name": "Portfolio",
+      "date": "June 2017",
+      "imgalt": "Portfolio",
+      "img": "images/projects/portfolio.png",
+      "url": "https://diveshpanwar.github.io",
+      "description": "This project is based on HTML, CSS, JS. This project uses optimization and responsiveness as its its primary feature."
+    }
+  ],
+
+  setProjects: function(){
+    $("main").append(projectMainContainer);
+    $("#projects").append(projectTitleHolder);
+    $("#projects").append(hrGradient);
+    for (project in projectsInfo.projects) {
+      $("#projects").append(projectContainer);
+      $("#projects .col-md-5:last").append(projectTitle.replace("%name%", projectsInfo.projects[project].name));
+      $("#projects .col-md-5:last").append(projectDate.replace("%date%", projectsInfo.projects[project].date));
+      $("#projects .col-md-5:last").append(projectDescription.replace("%description%", projectsInfo.projects[project].description));
+      $("#projects .col-md-5:last").append(projectImg.replace("%img%", projectsInfo.projects[project].img).replace("%imgalt%",projectsInfo.projects[project].imgalt));
+      $("#projects .col-md-5:last").append(projectLink.replace("%link%", projectsInfo.projects[project].url));
+    }
+  }
+};
 
 //everything inside this document ready function
 $(function(){
@@ -235,6 +295,8 @@ $(function(){
   // adding the work details
   works.setWorkExperience();
 
+  // adding projects information
+  projectsInfo.setProjects();
 
   // To mark the navigation item active on Click
   $(".navbar-nav li").click(function() {

@@ -35,3 +35,12 @@ var workCompany = '<h4><span class="text-thick">Majors:</span> %company%</h4>';
 var workLocation = '<h4><span class="text-thick">Type:</span> %location%</h4>';
 var workYear ='<h4><span class="text-thick">Location:</span> %year%</h4>';
 var workDescription = '<h4><span class="text-thick">Year:</span> %description%</h4>';
+
+var projectMainContainer = '<div class="row header-margin" id="projects"></div>';
+var projectTitleHolder = '<h2 class="text-center">Projects</h2>';
+var projectContainer = '<div class="col-md-5 shadow block-margin"></div>';
+var projectTitle = '<h4><span class="text-thick">Name:</span> %name%</h4>';
+var projectDate = '<h4><span class="text-thick">Date:</span> %date%</h4>';
+var projectDescription = '<h4><span class="text-thick">Description:</span> %description%</h4>';
+var projectImg = '<img src="%img%" class="img-responsive images" alt="%imgalt%">';
+var projectLink = '<p><a href="%link%" target="_BLANK"><button type="button" name="button" class="btn btn-primary btn-normal-margin">Visit Page</button></a></p>';
