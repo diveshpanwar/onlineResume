@@ -102,6 +102,11 @@ h1, h3, h2 {
 
 .images {
   border-radius: 5px;
+  
+}
+
+.images-shadow {
+  box-shadow: 3px 3px 16px -2px #a951ed;
 }
 
 @media only screen and (max-width: 500px) {

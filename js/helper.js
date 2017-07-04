@@ -42,5 +42,5 @@ var projectContainer = '<div class="col-md-5 shadow block-margin"></div>';
 var projectTitle = '<h4><span class="text-thick">Name:</span> %name%</h4>';
 var projectDate = '<h4><span class="text-thick">Date:</span> %date%</h4>';
 var projectDescription = '<h4 class="text-justify"><span class="text-thick">Description:</span> %description%</h4>';
-var projectImg = '<img src="%img%" class="img-responsive images" alt="%imgalt%">';
+var projectImg = '<img src="%img%" class="img-responsive images images-shadow" alt="%imgalt%">';
 var projectLink = '<p><a href="%link%" target="_BLANK"><button type="button" name="button" class="btn btn-primary btn-normal-margin">Visit Page</button></a></p>';
