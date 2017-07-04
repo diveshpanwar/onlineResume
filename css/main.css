@@ -117,8 +117,9 @@ h1, h3, h2 {
     font-size: 15px;
   }
 
-  #personalInfo h4 {
+  #personalInfo .row {
     font-size: 15px;
+    word-wrap: break-word;
   }
 
   #workExperience h4 {
