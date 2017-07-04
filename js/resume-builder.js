@@ -255,7 +255,7 @@ var projectsInfo = {
       "date": "June 2017",
       "imgalt": "Portfolio",
       "img": "images/projects/portfolio.png",
-      "url": "https://diveshpanwar.github.io",
+      "url": "https://diveshpanwar.github.io/portfolio/",
       "description": "This project is based on HTML, CSS, JS. This project uses optimization and responsiveness as its its primary feature."
     }
   ],
