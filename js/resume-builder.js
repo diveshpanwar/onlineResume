@@ -275,6 +275,13 @@ var projectsInfo = {
   }
 };
 
+
+//loading webpage script
+$(window).on('load',function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
 //everything inside this document ready function
 $(function(){
   // add navigation brand
@@ -323,6 +330,7 @@ $(function(){
      finalName = names.join(" ");
      $("#myName").html(finalName);
   });
+
 
 
 });
