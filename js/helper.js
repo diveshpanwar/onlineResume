@@ -29,7 +29,7 @@ var educationYear = '<h4><span class="text-thick">Year:</span> %year%</h4>';
 
 var workExperienceMainContainer = '<div class="row header-margin" id="workExperience"></div>';
 var workExperienceTitle = '<h2 class="text-center">Work Experience</h2>';
-var workExperienceContainer = '<div class="col-md-5 shadow block-margin"></div>';
+var workExperienceContainer = '<div class="col-md-5 shadow block-margin animated slideInLeft"></div>';
 var workRole = '<h4><span class="text-thick">Name:</span> %role%</h4>';
 var workCompany = '<h4><span class="text-thick">Majors:</span> %company%</h4>';
 var workLocation = '<h4><span class="text-thick">Type:</span> %location%</h4>';

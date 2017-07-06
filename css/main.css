@@ -102,7 +102,7 @@ h1, h3, h2 {
 
 .images {
   border-radius: 5px;
-  
+
 }
 
 .images-shadow {
@@ -147,4 +147,19 @@ h1, h3, h2 {
 	height: 100%;
 	z-index: 9999;
 	background: url(../images/Preloader_2.gif) center no-repeat #fff;
+}
+
+.text-medium {
+  font-size: 20px;
+}
+
+
+/*footer text*/
+.footerIcons {
+  color: #101010;
+  font-size: 25px !important;
+}
+
+footer a {
+  color: #101010;
 }

@@ -330,7 +330,4 @@ $(function(){
      finalName = names.join(" ");
      $("#myName").html(finalName);
   });
-
-
-
 });
