@@ -331,15 +331,7 @@ $(function(){
   });
 
  //scroll
- //Smooth scrolling when click to nav
- $('#myNavbar > ul > li > a').click(function (e) {
-     e.preventDefault();
-     var curLink = $(this);
-     var scrollPoint = $(curLink.attr('href')).position().top;
-     $('body,html').animate({
-         scrollTop: scrollPoint
-     }, 500);
- });
+
  $(window).scroll(function () {
      onScrollHandle();
  });
