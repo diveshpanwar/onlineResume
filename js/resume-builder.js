@@ -92,7 +92,7 @@ var bio  = {
     $("#personalInfo .row").append(headerImageTitle);
     $("#personalInfo .row .col-md-6:last").append(headerTitle.replace("%title%", bio.title));
     $("#personalInfo .row .col-md-6:last").append(headerRole.replace("%role%", bio.role));
-    $("#personalInfo .row").append(hrGradient);
+    $("#personalInfo").append(hrGradient);
   },
 
   setBioData: function(){
