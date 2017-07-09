@@ -336,8 +336,6 @@ $(function(){
      onScrollHandle();
  });
  function onScrollHandle() {
-     //Navbar shrink when scroll down
-     $(".navbar-inverse").toggleClass("navbar-shrink", $(this).scrollTop() > 50);
      //Get current scroll position
      var currentScrollPos = $(document).scrollTop();
      //Iterate through all node
