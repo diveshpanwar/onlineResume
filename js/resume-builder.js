@@ -39,7 +39,7 @@ addNavItems: function() {
 var bio  = {
   "title":"Divesh Panwar",
   "role": "Front End Developer",
-  "image": "images/logo.jpg",
+  "biopic": "images/logo.jpg",
   "mobile": "9882887885",
   "tagLine": "I am Simple, Hardworking, and Innovative. I love to explore and learn new things",
   "email": "divesh.panwar@gmail.com",
@@ -88,14 +88,14 @@ var bio  = {
   setMainContent: function(){
     $(".main").append(headerContent);
     $("#personalInfo .row").append(headerImageTitle);
-    $("#personalInfo .row .col-md-6").append(headerImage.replace("%image%",bio.image));
+    $("#personalInfo .row .col-md-6").append(headerImage.replace("%image%",bio.biopic));
     $("#personalInfo .row").append(headerImageTitle);
     $("#personalInfo .row .col-md-6:last").append(headerTitle.replace("%title%", bio.title));
     $("#personalInfo .row .col-md-6:last").append(headerRole.replace("%role%", bio.role));
     $("#personalInfo").append(hrGradient);
   },
 
-  setBioData: function(){
+  display: function(){
     $("#personalInfo").append(bioContent);
     $("#personalInfo .row:last").append(tagLine.replace("%tagLine%",bio.tagLine));
     $("#personalInfo .row:last").append(bioMobile.replace("%mobile%",bio.mobile));
@@ -136,14 +136,14 @@ var education = {
     "year": "2013-2017"
   }
 ],
-"onlineCourse": {
+"onlineCourses": {
   "name": "Udacity",
   "majors":"HTML, CSS, JAVASCRIPT",
   "type": "Nano Degree (Front End Web Development)",
   "year": "19 June, 2017 - Present"
 },
 
-setEducation: function(){
+display: function(){
 $(".main").append(educationContainer);
 $("#education").append(educationTitle);
 $("#education").append(hrGradient);
@@ -158,10 +158,10 @@ $("#education").append(hrGradient);
   }
 
   $("#education").append(schoolOnlineCourseContainer);
-  $("#education .col-md-5:last").append(educationName.replace("%name%",education.onlineCourse.name));
-  $("#education .col-md-5:last").append(educationType.replace("%type%",education.onlineCourse.type));
-  $("#education .col-md-5:last").append(educationMajors.replace("%majors%",education.onlineCourse.majors));
-  $("#education .col-md-5:last").append(educationYear.replace("%year%",education.onlineCourse.year));
+  $("#education .col-md-5:last").append(educationName.replace("%name%",education.onlineCourses.name));
+  $("#education .col-md-5:last").append(educationType.replace("%type%",education.onlineCourses.type));
+  $("#education .col-md-5:last").append(educationMajors.replace("%majors%",education.onlineCourses.majors));
+  $("#education .col-md-5:last").append(educationYear.replace("%year%",education.onlineCourses.year));
 
 }
 };
@@ -169,7 +169,7 @@ $("#education").append(hrGradient);
 // object  for work experience
 
 var works = {
-  "workDetail" : [
+  "jobs" : [
     {
       "role": "Web Master",
       "companyName": "University Institute of Information Technology",
@@ -199,24 +199,24 @@ var works = {
       "description": "My job description includes managing and creating on demand websites."
     }
   ],
-  setWorkExperience: function(){
+  display: function(){
     $("main").append(workExperienceMainContainer);
     $("#workExperience").append(workExperienceTitle);
     $("#workExperience").append(hrGradient);
-    for(work in works.workDetail){
+    for(work in works.jobs){
       $("#workExperience").append(schoolOnlineCourseContainer);
-      $("#workExperience .col-md-5:last").append(workRole.replace("%role%",works.workDetail[work].role));
-      $("#workExperience .col-md-5:last").append(workCompany.replace("%company%",works.workDetail[work].companyName));
-      $("#workExperience .col-md-5:last").append(workLocation.replace("%location%",works.workDetail[work].location));
-      $("#workExperience .col-md-5:last").append(workYear.replace("%year%",works.workDetail[work].year));
-      $("#workExperience .col-md-5:last").append(workDescription.replace("%description%",works.workDetail[work].description));
+      $("#workExperience .col-md-5:last").append(workRole.replace("%role%",works.jobs[work].role));
+      $("#workExperience .col-md-5:last").append(workCompany.replace("%company%",works.jobs[work].companyName));
+      $("#workExperience .col-md-5:last").append(workLocation.replace("%location%",works.jobs[work].location));
+      $("#workExperience .col-md-5:last").append(workYear.replace("%year%",works.jobs[work].year));
+      $("#workExperience .col-md-5:last").append(workDescription.replace("%description%",works.jobs[work].description));
     }
   }
 };
 
 // object for projects
 
-var projectsInfo = {
+var projects = {
   "projects": [
     {
       "name": "Laxmi Tutorials",
@@ -260,17 +260,17 @@ var projectsInfo = {
     }
   ],
 
-  setProjects: function(){
+  display: function(){
     $("main").append(projectMainContainer);
     $("#projects").append(projectTitleHolder);
     $("#projects").append(hrGradient);
-    for (project in projectsInfo.projects) {
+    for (project in projects.projects) {
       $("#projects").append(projectContainer);
-      $("#projects .col-md-5:last").append(projectTitle.replace("%name%", projectsInfo.projects[project].name));
-      $("#projects .col-md-5:last").append(projectDate.replace("%date%", projectsInfo.projects[project].date));
-      $("#projects .col-md-5:last").append(projectDescription.replace("%description%", projectsInfo.projects[project].description));
-      $("#projects .col-md-5:last").append(projectImg.replace("%img%", projectsInfo.projects[project].img).replace("%imgalt%",projectsInfo.projects[project].imgalt));
-      $("#projects .col-md-5:last").append(projectLink.replace("%link%", projectsInfo.projects[project].url));
+      $("#projects .col-md-5:last").append(projectTitle.replace("%name%", projects.projects[project].name));
+      $("#projects .col-md-5:last").append(projectDate.replace("%date%", projects.projects[project].date));
+      $("#projects .col-md-5:last").append(projectDescription.replace("%description%", projects.projects[project].description));
+      $("#projects .col-md-5:last").append(projectImg.replace("%img%", projects.projects[project].img).replace("%imgalt%",projects.projects[project].imgalt));
+      $("#projects .col-md-5:last").append(projectLink.replace("%link%", projects.projects[project].url));
     }
   }
 };
@@ -294,16 +294,16 @@ $(function(){
   bio.setMainContent();
 
   // adding bio data
-  bio.setBioData();
+  bio.display();
 
   // adding the education details
-  education.setEducation();
+  education.display();
 
   // adding the work details
-  works.setWorkExperience();
+  works.display();
 
   // adding projects information
-  projectsInfo.setProjects();
+  projects.display();
 
   // To mark the navigation item active on Click
   $(".navbar-nav li").click(function() {
@@ -320,7 +320,6 @@ $(function(){
   });
 
 // internationalize
-//theme switcher
   $("#internationalize").click(function(event) {
     var oldName = $("#myName").text();
     var finalName = oldName;
@@ -330,4 +329,40 @@ $(function(){
      finalName = names.join(" ");
      $("#myName").html(finalName);
   });
+
+ //scroll
+ //Smooth scrolling when click to nav
+ $('#myNavbar > ul > li > a').click(function (e) {
+     e.preventDefault();
+     var curLink = $(this);
+     var scrollPoint = $(curLink.attr('href')).position().top;
+     $('body,html').animate({
+         scrollTop: scrollPoint
+     }, 500);
+ });
+ $(window).scroll(function () {
+     onScrollHandle();
+ });
+ function onScrollHandle() {
+     //Navbar shrink when scroll down
+     $(".navbar-inverse").toggleClass("navbar-shrink", $(this).scrollTop() > 50);
+     //Get current scroll position
+     var currentScrollPos = $(document).scrollTop();
+     //Iterate through all node
+     $('#myNavbar > ul > li > a').each(function () {
+         var curLink = $(this);
+         var refElem = $(curLink.attr('href'));
+         //Compare the value of current position and the every section position in each scroll
+         if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
+             //Remove class active in all nav
+             $('#myNavbar > ul > li').removeClass("active");
+             //Add class active
+             curLink.parent().addClass("active");
+         }
+         else {
+             curLink.parent().removeClass("active");
+         }
+     });
+ }
+
 });
