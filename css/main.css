@@ -83,6 +83,19 @@ h1, h3, h2 {
   justify-content: center;
 }
 
+#map {
+  display: block;
+  height: 90%;
+  margin: 0 5%;
+  overflow: auto;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
 @media only screen and (min-width: 991px) {
   #personalInfo h1, h3{
     text-align: right;
@@ -136,6 +149,16 @@ h1, h3, h2 {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  #mapDiv {
+    height: 300px !important;
+  }
+
+  #map {
+    height: 70% !important;
+  }
+
+}
 /*Website still loading image  source: http://smallenvelop.com/display-loading-icon-page-loads-completely*/
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -155,6 +178,7 @@ h1, h3, h2 {
 
 
 /*footer text*/
+
 .footerIcons {
   color: #101010;
   font-size: 25px !important;
@@ -171,18 +195,4 @@ button a {
 button a:hover {
   color: white;
   text-decoration: none;
-}
-
-
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
 }
