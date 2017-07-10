@@ -104,7 +104,7 @@ var bio  = {
     $("#personalInfo .row:last").append(bioGitHub.replace("%github%",bio.github));
     $("#personalInfo .row:last").append(bioLinkedIn.replace("%linkedin%",bio.linkedin));
     $("#personalInfo .row:last").append(skillHeader);
-    for(skill in bio.skills){
+    for(var skill in bio.skills){
       $("#personalInfo .row:last").append(skillItem.replace("%skill%",bio.skills[skill].skill).replace("%%",bio.skills[skill].percent));
     }
   }
@@ -148,7 +148,7 @@ $(".main").append(educationContainer);
 $("#education").append(educationTitle);
 $("#education").append(hrGradient);
 
-  for(school in education.schools){
+  for(var school in education.schools){
     $("#education").append(schoolOnlineCourseContainer);
     $("#education .col-md-5:last").append(educationName.replace("%name%",education.schools[school].name));
     $("#education .col-md-5:last").append(educationType.replace("%type%",education.schools[school].type));
@@ -203,7 +203,7 @@ var works = {
     $("main").append(workExperienceMainContainer);
     $("#workExperience").append(workExperienceTitle);
     $("#workExperience").append(hrGradient);
-    for(work in works.jobs){
+    for(var work in works.jobs){
       $("#workExperience").append(schoolOnlineCourseContainer);
       $("#workExperience .col-md-5:last").append(workRole.replace("%role%",works.jobs[work].role));
       $("#workExperience .col-md-5:last").append(workCompany.replace("%company%",works.jobs[work].companyName));
@@ -264,7 +264,7 @@ var projects = {
     $("main").append(projectMainContainer);
     $("#projects").append(projectTitleHolder);
     $("#projects").append(hrGradient);
-    for (project in projects.projects) {
+    for (var project in projects.projects) {
       $("#projects").append(projectContainer);
       $("#projects .col-md-5:last").append(projectTitle.replace("%name%", projects.projects[project].name));
       $("#projects .col-md-5:last").append(projectDate.replace("%date%", projects.projects[project].date));
@@ -279,7 +279,7 @@ var projects = {
 //loading webpage script
 $(window).on('load',function() {
 		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
+		$(".se-pre-con").fadeOut("slow");
 	});
 
 //everything inside this document ready function
