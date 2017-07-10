@@ -172,3 +172,17 @@ button a:hover {
   color: white;
   text-decoration: none;
 }
+
+
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}

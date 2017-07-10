@@ -116,29 +116,29 @@ var education = {
   "schools": [
     {
     "name": "Shishu Shiksha Niketan",
-    "majors":"Science, SST, IP, Mathematics",
+    "majors":["Science", " SST", " IP", " Mathematics"],
     "type": "High School",
     "location": "Totu, Shimla, Himachal Pradesh, India",
-    "year": "1999-2011"
+    "year": "March, 1999 - March, 2011"
   },
   {
     "name": "Kendriya Vidyalya",
-    "majors":"Physics, Chemistry, Computer Science, Mathematics",
+    "majors":["Physics", " Chemistry", " Computer Science", " Mathematics"],
     "type": "Senior Secondary",
     "location": "Jutogh, Shimla, Himachal Pradesh, India",
-    "year": "2011-2013"
+    "year": "April, 2011 - March, 2013"
   },
   {
     "name": "University Institute of Information Technology",
-    "majors":"Programming, Algorithm, Databases, AI",
+    "majors":["Programming", " Algorithm", " Databases", " AI"],
     "type": "Graduation (B.Tech CSE)",
     "location": "Summer Hill, Shimla, Himachal Pradesh, India",
-    "year": "2013-2017"
+    "year": "August, 2013 - June, 2017"
   }
 ],
 "onlineCourses": {
   "name": "Udacity",
-  "majors":"HTML, CSS, JAVASCRIPT",
+  "majors":["HTML", " CSS", " JAVASCRIPT"],
   "type": "Nano Degree (Front End Web Development)",
   "year": "19 June, 2017 - Present"
 },
@@ -354,5 +354,9 @@ $(function(){
          }
      });
  }
+ // adding map
+$(".main").append(mapDiv);
+$("#mapDiv").append(hrGradient);
+$("#mapDiv").append(googleMap);
 
 });
