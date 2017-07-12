@@ -2,7 +2,7 @@
 var navItems = {
   "navTitle": {
     "name": "Online Resume",
-    "link": "#"
+    "link": "#personalInfo"
   },
   "navItems": [
   {
