@@ -2,7 +2,7 @@
 var navItems = {
   "navTitle": {
     "name": "Online Resume",
-    "link": "#"
+    "link": "#personalInfo"
   },
   "navItems": [
   {
@@ -25,7 +25,7 @@ var navItems = {
 addNavBrand: function() {
   var title = navItems.navTitle.name;
   var link = navItems.navTitle.link;
-  $(".navbar-header").append(navBrand.replace("%name%",title).replace("%link",link));
+  $(".navbar-header").append(navBrand.replace("%name%",title).replace("%link%",link));
 },
 addNavItems: function() {
   navItems.navItems.forEach(function(element){
