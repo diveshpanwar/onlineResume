@@ -21,26 +21,27 @@ var skillItem = '<div class="col-md-4"><h4 class="text-thick">%skill%</h4><span 
 var educationContainer = '<main><div class="row header-margin" id="education"></div></main>';
 var educationTitle = '<h2 class="text-center">Education</h2>';
 var schoolOnlineCourseContainer = '<div class="col-md-5 shadow block-margin"></div>';
-var educationName = '<h4><span class="text-thick">Name:</span> %name%</h4>';
+var educationName = '<h4><span class="text-thick">Title:</span> %name%</h4>';
 var educationMajors = '<h4><span class="text-thick">Majors:</span> %majors%</h4>';
-var educationType = '<h4><span class="text-thick">Type:</span> %type%</h4>';
+var educationType = '<h4><span class="text-thick">Degree:</span> %type%</h4>';
 var educationLocation ='<h4><span class="text-thick">Location:</span> %location%</h4>';
-var educationYear = '<h4><span class="text-thick">Year:</span> %year%</h4>';
+var educationYear = '<h4><span class="text-thick">Dates:</span> %year%</h4>';
+var educationUrl = '<h4><span class="text-thick">URL:</span> <a href="%url%" target="_blank">Visit Page</a></h4>';
 
 var workExperienceMainContainer = '<div class="row header-margin" id="workExperience"></div>';
 var workExperienceTitle = '<h2 class="text-center">Work Experience</h2>';
 var workExperienceContainer = '<div class="col-md-5 shadow block-margin animated slideInLeft"></div>';
-var workRole = '<h4><span class="text-thick">Name:</span> %role%</h4>';
-var workCompany = '<h4><span class="text-thick">Majors:</span> %company%</h4>';
-var workLocation = '<h4><span class="text-thick">Type:</span> %location%</h4>';
-var workYear ='<h4><span class="text-thick">Location:</span> %year%</h4>';
-var workDescription = '<h4><span class="text-thick">Year:</span> %description%</h4>';
+var workRole = '<h4><span class="text-thick">Title:</span> %role%</h4>';
+var workCompany = '<h4><span class="text-thick">Employer:</span> %company%</h4>';
+var workLocation = '<h4><span class="text-thick">Location:</span> %location%</h4>';
+var workYear ='<h4><span class="text-thick">Dates:</span> %year%</h4>';
+var workDescription = '<h4><span class="text-thick">Description:</span> %description%</h4>';
 
 var projectMainContainer = '<div class="row header-margin" id="projects"></div>';
 var projectTitleHolder = '<h2 class="text-center">Projects</h2>';
 var projectContainer = '<div class="col-md-5 shadow block-margin"></div>';
-var projectTitle = '<h4><span class="text-thick">Name:</span> %name%</h4>';
-var projectDate = '<h4><span class="text-thick">Date:</span> %date%</h4>';
+var projectTitle = '<h4><span class="text-thick">Title:</span> %name%</h4>';
+var projectDate = '<h4><span class="text-thick">Dates:</span> %date%</h4>';
 var projectDescription = '<h4 class="text-justify"><span class="text-thick">Description:</span> %description%</h4>';
 var projectImg = '<img src="%img%" class="img-responsive images images-shadow" alt="%imgalt%">';
 var projectLink = '<p><button type="button" name="button" class="btn btn-primary btn-normal-margin"><a href="%link%" target="_BLANK">Visit Page</a></button></p>';
@@ -100,7 +101,7 @@ function initializeMap() {
     // the locations array. Note that forEach is used for array iteration
     // as described in the Udacity FEND Style Guide:
     // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
-    works.jobs.forEach(function(job){
+    work.jobs.forEach(function(job){
       locations.push(job.location);
     });
 
