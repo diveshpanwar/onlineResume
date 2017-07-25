@@ -1,11 +1,6 @@
 #change landing page
 DirectoryIndex index.php index.html
 
-
-RewriteEngine on
-RewriteCond %{HTTPS} on
-RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 <IfModule mod_expires.c>
 
     ExpiresActive on
@@ -94,3 +89,7 @@ RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
 </IfModule>
+
+RewriteEngine on
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
