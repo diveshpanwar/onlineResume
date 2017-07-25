@@ -1,6 +1,12 @@
 #change landing page
 DirectoryIndex index.php index.html
 
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+
+FileETag None
+
 <IfModule mod_expires.c>
 
     ExpiresActive on
