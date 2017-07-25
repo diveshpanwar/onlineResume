@@ -228,7 +228,7 @@ var projects = {
       "title": "Laxmi Tutorials",
       "url": "https://laxmitutorials.com",
       "imgalt": "Laxmi Tutorials",
-      "images": ["images/projects/laxmi.png","images/projects/laxmi_mobile.png"],
+      "images": ["images/projects/laxmi.jpg","images/projects/laxmi_mobile.png"],
       "dates": "July 2016",
       "description": "This project is based on core PHP, HTML, CSS. This project belongs to an institute called Laxmi Tutorials and Training Institute."
     },
@@ -236,7 +236,7 @@ var projects = {
       "title": "UIIT Website",
       "dates": "January 2017",
       "imgalt": "UIIT Website",
-      "images": ["images/projects/uiit.png","images/projects/uiit_mobile.png"],
+      "images": ["images/projects/uiit.jpg","images/projects/uiit_mobile.png"],
       "url": "http://uiit.ac.in",
       "description": "This project is based on PHP, HTML, CSS. This project belongs to an educational institute, University Institute of Information Technology."
     },
@@ -244,7 +244,7 @@ var projects = {
       "title": "UIIT Portal",
       "dates": "March 2017",
       "imgalt": "UIIT Portal",
-      "images": ["images/projects/portal.png","images/projects/portal_mobile.png"],
+      "images": ["images/projects/portal.jpg","images/projects/portal_mobile.png"],
       "url": "http://portal.uiit.ac.in",
       "description": "This project is based on Laravel Framework, HTML, CSS, and Bootstrap. This project belongs to an institute, laxmitutorials.com."
     },
@@ -252,7 +252,7 @@ var projects = {
       "title": "RICSIT Website",
       "dates": "Feburary 2017",
       "imgalt": "RICSIT Website",
-      "images": ["images/projects/ricsit.png","images/projects/ricsit_mobile.png"],
+      "images": ["images/projects/ricsit.jpg","images/projects/ricsit_mobile.png"],
       "url": "http://ricsit.uiit.ac.in",
       "description": "This project is based on core PHP, HTML, CSS. This project is created for a conference, Recent Innovations in Computer Science and Information Technology."
     },
@@ -260,7 +260,7 @@ var projects = {
       "title": "Portfolio",
       "dates": "June 2017",
       "imgalt": "Portfolio",
-      "images": ["images/projects/portfolio.png","images/projects/portfolio_mobile.png"],
+      "images": ["images/projects/portfolio.jpg","images/projects/portfolio_mobile.png"],
       "url": "https://diveshpanwar.github.io/portfolio/",
       "description": "This project is based on HTML, CSS, JS. This project uses optimization and responsiveness as its its primary feature."
     }
