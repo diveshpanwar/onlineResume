@@ -40,6 +40,7 @@ var bio  = {
   "name":"Divesh Panwar",
   "role": "Front End Developer",
   "biopic": "images/logo.jpg",
+  "biopicLarge":"images/logo_large.jpg",
   "welcomeMessage": "I am Simple, Hardworking, and Innovative. I love to explore and learn new things",
   "contacts": {
     "mobile": "9882887885",
@@ -90,7 +91,7 @@ var bio  = {
   setMainContent: function(){
     $(".main").append(headerContent);
     $("#personalInfo .row").append(headerImageTitle);
-    $("#personalInfo .row .col-md-6").append(headerImage.replace("%image%",bio.biopic));
+    $("#personalInfo .row .col-md-6").append(headerImage.replace("%image%",bio.biopic).replace("%imageLarge%",bio.biopicLarge).replace("%image%",bio.biopic));
     $("#personalInfo .row").append(headerImageTitle);
     $("#personalInfo .row .col-md-6:last").append(headerTitle.replace("%title%", bio.name));
     $("#personalInfo .row .col-md-6:last").append(headerRole.replace("%role%", bio.role));
@@ -227,7 +228,7 @@ var projects = {
       "title": "Laxmi Tutorials",
       "url": "https://laxmitutorials.com",
       "imgalt": "Laxmi Tutorials",
-      "images": ["images/projects/laxmi.png"],
+      "images": ["images/projects/laxmi.png","images/projects/laxmi_mobile.png"],
       "dates": "July 2016",
       "description": "This project is based on core PHP, HTML, CSS. This project belongs to an institute called Laxmi Tutorials and Training Institute."
     },
@@ -235,7 +236,7 @@ var projects = {
       "title": "UIIT Website",
       "dates": "January 2017",
       "imgalt": "UIIT Website",
-      "images": ["images/projects/uiit.png"],
+      "images": ["images/projects/uiit.png","images/projects/uiit_mobile.png"],
       "url": "http://uiit.ac.in",
       "description": "This project is based on PHP, HTML, CSS. This project belongs to an educational institute, University Institute of Information Technology."
     },
@@ -243,7 +244,7 @@ var projects = {
       "title": "UIIT Portal",
       "dates": "March 2017",
       "imgalt": "UIIT Portal",
-      "images": ["images/projects/portal.png"],
+      "images": ["images/projects/portal.png","images/projects/portal_mobile.png"],
       "url": "http://portal.uiit.ac.in",
       "description": "This project is based on Laravel Framework, HTML, CSS, and Bootstrap. This project belongs to an institute, laxmitutorials.com."
     },
@@ -251,7 +252,7 @@ var projects = {
       "title": "RICSIT Website",
       "dates": "Feburary 2017",
       "imgalt": "RICSIT Website",
-      "images": ["images/projects/ricsit.png"],
+      "images": ["images/projects/ricsit.png","images/projects/ricsit_mobile.png"],
       "url": "http://ricsit.uiit.ac.in",
       "description": "This project is based on core PHP, HTML, CSS. This project is created for a conference, Recent Innovations in Computer Science and Information Technology."
     },
@@ -259,7 +260,7 @@ var projects = {
       "title": "Portfolio",
       "dates": "June 2017",
       "imgalt": "Portfolio",
-      "images": ["images/projects/portfolio.png"],
+      "images": ["images/projects/portfolio.png","images/projects/portfolio_mobile.png"],
       "url": "https://diveshpanwar.github.io/portfolio/",
       "description": "This project is based on HTML, CSS, JS. This project uses optimization and responsiveness as its its primary feature."
     }
@@ -275,7 +276,7 @@ var projects = {
         $("#projects .col-md-5:last").append(projectDate.replace("%date%", project.dates));
         $("#projects .col-md-5:last").append(projectDescription.replace("%description%", project.description));
         //not iterating over images array as I am using just one image
-        $("#projects .col-md-5:last").append(projectImg.replace("%img%", project.images[0]).replace("%imgalt%",project.imgalt));
+        $("#projects .col-md-5:last").append(projectImg.replace("%img%", project.images[1]).replace("%imgalt%",project.imgalt).replace("%imgLarge%", project.images[0]).replace("%img%", project.images[1]));
         $("#projects .col-md-5:last").append(projectLink.replace("%link%", project.url));
     });
   }

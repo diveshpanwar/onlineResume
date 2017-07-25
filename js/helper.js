@@ -7,7 +7,8 @@ var headerContent = '<header class="container-fluid text-center" id="personalInf
 var headerImageTitle = '<div class="col-md-6 text-left"></div>';
 var headerTitle = '<h1 class="text-big" id="myName">%title%</h1>';
 var headerRole = '<h3 class="">%role%</h3>';
-var headerImage = '<img src="%image%" class="header-image header-above-margin" alt="my display picture">';
+var headerImage = '<picture><source media="(min-width: 700px)" srcset="%imageLarge%"><source media="(min-width: 500px)" srcset="%image%"><img src="%image%" class="header-image header-above-margin" alt="My Display Image"></picture>';
+
 var bioContent = '<div class="row shadow"></div>';
 var tagLine = '<div class="col-md-12"><h2>"%tagLine%"</h2></div>';
 var bioMobile = '<div class="col-md-4"><span class="fa fa-mobile icon-big"></span> <span class="icon-text">%mobile%</span></div>';
@@ -43,7 +44,7 @@ var projectContainer = '<div class="col-md-5 shadow block-margin"></div>';
 var projectTitle = '<h4><span class="text-thick">Title:</span> %name%</h4>';
 var projectDate = '<h4><span class="text-thick">Dates:</span> %date%</h4>';
 var projectDescription = '<h4 class="text-justify"><span class="text-thick">Description:</span> %description%</h4>';
-var projectImg = '<img src="%img%" class="img-responsive images images-shadow" alt="%imgalt%">';
+var projectImg = '<picture><source media="(min-width: 501px)" srcset="%imgLarge%"><source media="(max-width: 500px)" srcset="%img%"><img src="%img%" class="img-responsive images images-shadow" alt="%imgalt%"></picture>';
 var projectLink = '<p><button type="button" name="button" class="btn btn-primary btn-normal-margin"><a href="%link%" target="_BLANK">Visit Page</a></button></p>';
 
 var mapDiv = '    <div id="mapDiv"><h2 class="text-center">Where I\'ve Lived and Worked</h2></div>';
