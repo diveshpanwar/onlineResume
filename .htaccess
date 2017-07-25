@@ -8,20 +8,27 @@ DirectoryIndex index.php index.html
 FileETag None
 
 ## EXPIRES CACHING ##
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access plus 60 seconds"
-ExpiresByType image/jpeg "access plus 60 seconds"
-ExpiresByType image/gif "access plus 60 seconds"
-ExpiresByType image/png "access plus 60 seconds"
-ExpiresByType text/css "access plus  60 seconds"
-ExpiresByType application/pdf "access plus 1 month"
-ExpiresByType text/x-javascript "access plus 60 seconds"
-ExpiresByType application/x-shockwave-flash "access plus 1 month"
-ExpiresByType image/x-icon "access plus 1 year"
-ExpiresDefault "access plus 600 seconds"
+AddType image/x-icon .ico
+
+<IfModule mod_headers.c>
+# 10 min
+<FilesMatch “.(ico|gif|jpg|jpeg|png|flv|pdf)$”>
+Header set Cache-Control “max-age=600”
+</FilesMatch>
+# 1 min
+<FilesMatch “.(js|css|swf)$”>
+Header set Cache-Control “max-age=60”
+</FilesMatch>
+# 2 min
+<FilesMatch “.(html|htm|txt|php)$”>
+Header set Cache-Control “max-age=120”
+</FilesMatch>
 </IfModule>
-## EXPIRES CACHING ##
+
+EXPIRES CACHING ##
+
+
+
 RewriteEngine on
 RewriteCond %{HTTPS} on
 RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
