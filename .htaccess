@@ -8,8 +8,6 @@ DirectoryIndex index.php index.html
 FileETag None
 
 ## EXPIRES CACHING ##
-AddType image/x-icon .ico
-
 <IfModule mod_headers.c>
 # 10 min
 <FilesMatch “.(ico|gif|jpg|jpeg|png|flv|pdf)$”>
